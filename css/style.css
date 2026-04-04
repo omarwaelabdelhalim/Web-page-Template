@@ -172,7 +172,7 @@ body{
 
 /* Landing Section Styles START */
 .landing{
-    background-image: url(/assets/yasmin-peyman-v20xUKKXylY-unsplash.jpg);
+    background-image: url(../assets/yasmin-peyman-v20xUKKXylY-unsplash.jpg);
     background-size: cover;
     background-position: center;
     height: calc(100vh - 62px );
