@@ -377,6 +377,59 @@ i{
     text-align: center;
 }
 /* about section styles END */
+/* contact section styles START */
+.contact{
+    padding: 50px 20px;
+    background-color: #f6f6f6;
+    margin: 20px 0;
+}
+.contact .container-contact{
+    background-color: #eee;
+    border-radius: 30px;
+    padding: 20px;
+    overflow: hidden;
+    max-width: 600px;
+    min-width: 300px;
+    margin: 0 auto;
+}
+.contact .contact-form{
+    display: flex;
+    flex-direction: column;
+}
+
+.contact .contact-form input,
+.contact .contact-form textarea{
+    background-color: #fff;
+    border:none;
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 10px;
+    border-radius: 6px;
+}
+.contact .contact-form input,
+.contact .contact-form textarea:focus{
+    outline: 1px solid var(--main-color);
+}
+
+.contact .contact-form textarea{
+    resize: none;
+    height: 120px;
+}
+.contact .contact-form button{
+    align-self: center;
+    padding: 12px 30px;
+    border-radius: 20px;
+    background-color: #f6f6f6;
+    color: #666;
+    border: none;
+    transition: 0.5s ease-in-out;
+}
+.contact .contact-form button:hover{
+    background-color: rgba(16, 202, 183, 0.8);
+    color: #fff;
+    transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease, border 0.3s ease;
+}
+/* contact section styles END */
 
 
 
