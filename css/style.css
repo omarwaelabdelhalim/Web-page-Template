@@ -40,6 +40,7 @@ body{
 .header{
     position: sticky;
     top: 0;
+    z-index: 100;
     padding: 15px;
     background-color: #f6f6f6;
 }
@@ -156,10 +157,11 @@ body{
     z-index: -1;
 }
 .intro-text {
-    width: 700px;
+    width: 500px;
     max-width: 100%;
     text-align: center;
     padding: 100px 20px;
+    text-shadow: 0px 0px 1px rgba(0, 0, 0, 0.1), 0px 0px 2px rgba(0, 0, 0, 0.1), 0px 0px 3px rgba(0, 0, 0, 0.1);
 }
 .intro-text h1 {
     letter-spacing: 2px;
@@ -169,17 +171,11 @@ body{
     font-weight: 800;
 }
 .intro-text p {
+    margin: 20px 0;
     font-size: 18px;
-    line-height: 1.8;
-    font-weight: 400;
-    color: rgb(255, 255, 255);
-    border-radius: 2px;
-    text-shadow: #10cab7 0px 0px 5px;
-    border: #10cab7 1px solid;
-    padding: 20px;
-    border-radius: 10px;
-    background-origin: padding-box;
-    margin-bottom: 30px;
+    font-weight: 500;
+    color:var(--main-color);
+    padding: 10px;
 }
 .intro-text .btn {
     display: inline-block;
@@ -202,11 +198,50 @@ body{
 
 /* features section styles START */
 .features{
-    padding-top: 60px;
-    padding-bottom: 60px;
+    padding-top: 50px;
+    padding-bottom: 50px;
     background-color: #f6f6f6;
 }
+.features .container{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(225px, 1fr));
+    gap: 20px;
 
+}
+.features .feat{
+    padding: 20px;
+    text-align: center;
+    border-radius: 6px;
+    /* background-color: white; */
+    /* box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    z-index: 0;
+}
+.features .feat i {
+    font-size: 40px;
+    color: #333;
+    margin-bottom: 10px;
+}
+.features .feat h3 {
+    transform: uppercase;
+    margin: 10px 0;
+    font-size: 24px;
+    color: #333;
+}
+.features .feat p {
+    font-size: 16px;
+    color: #666;
+}
+i{
+    transition: color 0.3s ease;
+}
+.features .feat:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 10px  rgba(16, 202, 183, 0.5);
+    h3 , i {
+        color: var(--main-color)
+    }
+}
 /* features section styles END */
 
 
