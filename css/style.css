@@ -25,7 +25,6 @@ html {
     padding-right:15px;
     margin-left: auto;
     margin-right: auto;
-    /* width: 100%;  */
 }
 /* small */
 @media (min-width: 768px){
@@ -53,7 +52,8 @@ html {
     text-align: center;
     font-weight: 800;
     letter-spacing: -6px;
-    margin: 0;
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 .special-heading + p {
     text-align: center;
@@ -232,12 +232,14 @@ html {
 
 /* features section styles START */
 .features{
+    margin-bottom: 20px;
     margin-top: 20px;
     padding: 50px 20px;
     background-color: #f6f6f6;
 }
 .features .container-features{
     margin-top: 10px;
+    margin-bottom: 10px;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(min(100%, 225px), 225px));
     justify-content: center;
@@ -252,7 +254,7 @@ html {
 }
 .features .feat i {
     font-size: 40px;
-    color: #333;
+    color: var(--main-color);
     margin-bottom: 10px;
 }
 .features .feat h3 {
@@ -301,7 +303,7 @@ i{
 }
 .services .container-services .service-content .service .icon {
     font-size: 40px;
-    color: #333;
+    color: var(--main-color);
     margin-bottom: 10px;
     transition: color 0.3s ease;
 }
@@ -312,7 +314,60 @@ i{
         color: var(--main-color)
     }
 }
-/* services section styles START */
+/* services section styles END */
+/* about section styles START */
+.image-card{
+    width: 300px;
+    display: block;
+    background-size: cover;
+    background-position: center;
+    border-radius: 6px;
+    transition: 0.3s;
+    border: 1px solid transparent;
+}
+.about-card{
+    position: relative;
+    overflow: hidden;
+    border-radius: 6px;
+    background-color:  rgba(16, 202, 183, 0.1);
+}
+.about-card p{
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(100%);
+    pointer-events: none;
+    transition: opacity 0.35s ease, transform 0.35s ease, visibility 0.35s ease;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: 0;
+    background-color: rgba(16, 202, 183, 0.85);
+    color: #fff;
+    padding: 10px;
+    width: 100%;
+}
+
+.about-card:hover p {
+    visibility: visible;
+    transform: translateY(0);
+    pointer-events: auto;
+    opacity: 1;
+}
+
+.about-content{
+    margin: 20px 0;
+    padding: 50px 20px;
+    background-color: #f6f6f6;
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, 300px), 300px));
+    gap: 30px;
+    align-items: center;
+    text-align: center;
+}
+/* about section styles END */
+
 
 
 
