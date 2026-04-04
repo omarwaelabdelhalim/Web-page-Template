@@ -141,7 +141,7 @@ html {
     top: calc(100% + 5px);
     right: 0;
     margin: 0;
-    background-color: #f6f6f6;
+    background-color:  rgba(16, 202, 183, 0.6);
     padding: 0px;
     min-width: 200px;
     border-radius: 5px;
@@ -149,9 +149,10 @@ html {
 .header .container-header .links ul li::before{
     content: "";
     border-width: 10px;
+    opacity: 0.5;
     position: absolute;
     border-style: solid;
-    border-color: transparent transparent #f6f6f6 transparent;
+    border-color: transparent transparent rgba(108, 192, 180, 0.6) transparent;
     right: 5px;
     top: -18px
 }
@@ -170,9 +171,7 @@ html {
 }
 .header .links ul a:hover{
     padding-left: 25px;
-}
-.header .links ul a:hover {
-    color: #6cc0b4;
+    color: #f6f6f6;
 }
 .header .links ul li:not(:last-child) a {
     border-bottom: 0.6px solid #ddd;
