@@ -57,7 +57,7 @@ html {
 }
 .special-heading + p {
     text-align: center;
-    margin: -35px 0 0;
+    margin: -50px 0 0;
     font-size: 20px;
     color: #666;
 }
@@ -142,7 +142,7 @@ html {
     top: calc(100% + 5px);
     right: 0;
     margin: 0;
-    background-color:  rgba(16, 202, 183, 0.6);
+    background-color:  rgba(16, 202, 183, 0.5);
     padding: 0px;
     min-width: 200px;
     border-radius: 5px;
@@ -172,7 +172,7 @@ html {
 }
 .header .links ul a:hover{
     padding-left: 25px;
-    color: #f6f6f6;
+    color: white;
 }
 .header .links ul li:not(:last-child) a {
     border-bottom: 0.6px solid #ddd;
@@ -182,7 +182,7 @@ html {
 
 /* Landing Section Styles START */
 .landing{
-    background-image: url(../assets/yasmin-peyman-v20xUKKXylY-unsplash.jpg);
+    background-image: url(../assets/pexels-pixabay-355747.jpg);
     background-size: cover;
     background-position: center;
     height: calc(100vh - 62px );
@@ -192,7 +192,7 @@ html {
     z-index: -1;
 }
 .intro-text {
-    width: 500px;
+    width: 700px;
     max-width: 100%;
     text-align: center;
     padding: 100px 20px;
@@ -208,14 +208,14 @@ html {
     margin: 20px 0;
     font-size: 18px;
     font-weight: 500;
-    color:var(--main-color);
+    color: #333;
     padding: 10px;
 }
 .intro-text .btn {
     display: inline-block;
     padding: 12px 30px;
     background-color: var(--main-color);
-    color: rgb(0, 0, 0);
+    color: #333;
     text-decoration: none;
     border-radius: 10px;
     border: 1px solid transparent;
@@ -224,7 +224,7 @@ html {
 }
 .intro-text .btn:hover {
     background-color: #ffffff00;
-    color: var(--main-color);
+    color: white;
     transform: scale(1.1);
     border: 1px solid var(--main-color);
 }
@@ -320,7 +320,7 @@ i{
     width: 300px;
     height: 200px;
     background-color: rgba(16, 202, 183, 0.1);
-    border-radius: 6px;
+    border-radius: 30px;
     position: relative;
     margin: 0 auto;
     transform: none;
@@ -331,18 +331,19 @@ i{
     object-fit: cover;
     display: block;
     background-position: center;
-    border-radius: 6px;
+    border-radius: 30px;
     transition: 0.3s;
     border: 1px solid transparent;
 }
 .about-card{
     position: relative;
     overflow: hidden;
-    border-radius: 6px;
+    border-radius: 30px;
     background-color:  rgba(16, 202, 183, 0.1);
 }
 .about-card p{
     opacity: 0;
+    text-align: center;
     visibility: hidden;
     transform: translateY(100%);
     pointer-events: none;
@@ -356,6 +357,7 @@ i{
     color: #fff;
     padding: 10px;
     width: 100%;
+    height: 55px;
 }
 
 .about-card:hover p {
@@ -445,6 +447,7 @@ i{
     justify-content: center;
     align-items: center;
     gap: 10px;
+    padding: 20px;
 }
 
 .copyright .copyright-container i {
